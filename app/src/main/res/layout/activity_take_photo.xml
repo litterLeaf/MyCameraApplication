@@ -3,30 +3,23 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-
-    <!--<SurfaceView-->
-    <!--android:id="@+id/surfaceView1"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:layout_centerInParent="true" />-->
     <RelativeLayout
         android:id="@+id/containerImg"
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1">
 
+
         <FrameLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.flurgle.camerakit.CameraView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                app:ckFocus="continuous"
-                android:id="@+id/cameraView"
+            <com.application.admin.mycameraapplication.SquareCameraContainer
+                android:id="@+id/cameraContainer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"/>
+                android:layout_height="wrap_content" />
+
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="match_parent"
